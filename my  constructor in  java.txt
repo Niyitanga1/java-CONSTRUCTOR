@@ -1,0 +1,149 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package syntaxlearning;
+
+/**
+ *
+ * @author UR SYSTEM ADMIN
+ */
+
+class Employee5{
+    private
+            String name;
+            int age;
+            double salary;
+            
+    public 
+            Employee5(){
+                name  =  "Safari";
+	        age  =  25;
+                salary  =  4234235.893;
+            }
+            Employee5(String name1){
+                name  =  name1;
+	age  =  25;
+   salary  =  4234235.893;
+                
+            }
+            Employee5(int age1 ){  
+            name  =  "Safari";
+   age  =  age1;
+   salary  =  4234235.893;
+            
+            }
+           Employee5(double salary1){ 
+           name  =  "Safari";
+	age  =  25;
+   salary  =  salary1;
+           }
+        Employee5(String name1, int age1){
+        name  =  name1;
+   	age  =  age1;
+   salary  =  4234235.893;
+        
+        }
+       Employee5(String name1, double salary1 ){
+            name  =  name1;
+   age  =  25;
+   salary  =  salary1;
+           
+       }
+       
+       Employee5(int age1, double salary1 ) {
+	name  =  "Safari";
+   age  =  age1;
+   salary  =  salary1;
+}
+Employee5(String name1, int age1, double salary1 ) {
+   name  =  name1;
+   age  =  age1;
+   salary  =  salary1;
+}
+       
+  public String getName() {
+   return name;
+}
+ 
+// Public setter for private data member name
+public void setName(String name1) {
+   name  =  name1;
+}
+ 
+// Public getter for private data member age
+public int getAge()  {
+   return age;
+}
+ 
+// Public setter for private data member age
+void setAge(int age1) {
+   age  =  age1;
+}
+ 
+// Public getter for private data member age
+public double getSalary() {
+   return salary;
+}
+ 
+// Public setter for private data member age
+public void setSalary(double salary1) {
+   salary  =  salary1;
+}
+ 
+// A public member function
+public double calculateTaxes()  {
+   return salary*0.0352;
+}    
+   
+
+} 
+            
+           
+            
+            
+            
+            
+            
+            
+            
+            
+    
+
+public class Syntaxlearning {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         System.out.println("Class Employee5");
+         
+         Employee5 c1=new Employee5();
+         System.out.println("NAME : "+c1.getName()+ " AGE:"+c1.getAge()+" SALARY:"+c1.getSalary()+" TAx:"+c1.calculateTaxes());
+         
+         
+         Employee5 c2=new Employee5("KAGINA");
+         System.out.println("NAME : "+c2.getName()+ " AGE:"+c2.getAge()+" SALARY:"+c2.getSalary()+" TAx:"+c2.calculateTaxes());
+         
+          Employee5 c3=new Employee5(23);
+         System.out.println("NAME : "+c3.getName()+ " AGE:"+c3.getAge()+" SALARY:"+c3.getSalary()+" TAx:"+c3.calculateTaxes());
+          
+          Employee5 c4=new Employee5(100000.06);
+         System.out.println("NAME : "+c4.getName()+ " AGE:"+c4.getAge()+" SALARY:"+c4.getSalary()+" TAx:"+c4.calculateTaxes());
+          Employee5 c5=new Employee5("Kagina",42);
+         System.out.println("NAME : "+c5.getName()+ " AGE:"+c5.getAge()+" SALARY:"+c5.getSalary()+" TAx:"+c5.calculateTaxes());
+          Employee5 c6=new Employee5("Kagina", 43255.678);
+         System.out.println("NAME : "+c6.getName()+ " AGE:"+c6.getAge()+" SALARY:"+c6.getSalary()+" TAx:"+c6.calculateTaxes());
+          Employee5 c7=new Employee5(50, 100000.06);
+         System.out.println("NAME : "+c7.getName()+ " AGE:"+c7.getAge()+" SALARY:"+c7.getSalary()+" TAx:"+c7.calculateTaxes());
+          Employee5 c8=new Employee5("Sebishyimbo",23, 3000.678);
+         System.out.println("NAME : "+c8.getName()+ " AGE:"+c8.getAge()+" SALARY:"+c8.getSalary()+" TAx:"+c8.calculateTaxes());
+       
+         c2.setName("Sefuku");
+         c2.setAge(72);
+         System.out.println("NAME : "+c2.getName()+ " AGE:"+c2.getAge()+" SALARY:"+c2.getSalary()+" TAx:"+c2.calculateTaxes());
+         
+    }
+    
+}
